@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:can
+LIBS:CAN bus transceiver v2 PYBv11-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -63,28 +64,6 @@ F 1 "TCAN337GDR" H 3075 2850 60  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3000 2425 60  0001 C CNN
 F 3 "" H 3000 2425 60  0000 C CNN
 	1    3075 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X16 P1
-U 1 1 58129A6E
-P 1500 2250
-F 0 "P1" H 1500 3100 50  0000 C CNN
-F 1 "CONN_01X16" V 1600 2250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x16" H 1500 2250 50  0001 C CNN
-F 3 "" H 1500 2250 50  0000 C CNN
-	1    1500 2250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_01X16 P3
-U 1 1 58129D53
-P 4525 2250
-F 0 "P3" H 4525 3100 50  0000 C CNN
-F 1 "CONN_01X16" V 4625 2250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x16" H 4525 2250 50  0001 C CNN
-F 3 "" H 4525 2250 50  0000 C CNN
-	1    4525 2250
 	1    0    0    -1  
 $EndComp
 Text Notes 1000 1700 0    60   ~ 0
@@ -122,15 +101,8 @@ F 3 "" H 2150 1175 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 1175 2150 2900
-Wire Wire Line
-	2150 2900 1700 2900
-Wire Wire Line
 	2650 1775 2150 1775
 Connection ~ 2150 1775
-Wire Wire Line
-	2650 2650 2150 2650
-Connection ~ 2150 2650
 Wire Wire Line
 	2650 1700 2250 1700
 Wire Wire Line
@@ -138,9 +110,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 2575 2250 2575
 Connection ~ 2250 2575
-Wire Wire Line
-	1700 2800 2250 2800
-Connection ~ 2250 2800
 Wire Wire Line
 	2650 1625 2050 1625
 Wire Wire Line
@@ -246,4 +215,30 @@ Wire Wire Line
 	1925 1400 1925 1600
 Wire Wire Line
 	1925 1600 1700 1600
+Wire Wire Line
+	2650 2650 2150 2650
+Wire Wire Line
+	2150 2650 2150 1175
+$Comp
+L CONN_01X06 P1
+U 1 1 58144AB1
+P 1500 1750
+F 0 "P1" H 1500 2100 50  0000 C CNN
+F 1 "CONN_01X06" V 1600 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 1500 1750 50  0001 C CNN
+F 3 "" H 1500 1750 50  0000 C CNN
+	1    1500 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P3
+U 1 1 58144C08
+P 4525 1750
+F 0 "P3" H 4525 2100 50  0000 C CNN
+F 1 "CONN_01X06" V 4625 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 4525 1750 50  0001 C CNN
+F 3 "" H 4525 1750 50  0000 C CNN
+	1    4525 1750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

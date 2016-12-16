@@ -11,3 +11,5 @@ Some of ideas:
 4. Connection to internet via WiFi and mobile connection.
 
 5. Multimedia sub-project (as for now - RPi + Pioneer AVH-X7500BT via AV cable)
+
+6. Head/Tail light turn on/off, mode switch (if any)

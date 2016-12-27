@@ -12,4 +12,5 @@ Some of ideas:
 
 5. Multimedia sub-project (as for now - RPi + Pioneer AVH-X7500BT via AV cable)
 
-6. Head/Tail light turn on/off, mode switch (if any)
+6. Head/Tail light turn on/off, mode switch (if any) (use RGB led stripes?)
+
